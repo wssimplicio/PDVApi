@@ -28,9 +28,4 @@ public class Classificacao {
     @Column()
     private Integer idpai;
 
-    public Classificacao(ClassificacaoDTO classificacaoDTO) {
-        this.descricao = classificacaoDTO.descricao();
-        this.nivel = classificacaoDTO.nivel();
-        this.idpai = classificacaoDTO.idpai();
-    }
 }
