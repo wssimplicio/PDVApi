@@ -11,8 +11,8 @@ import java.util.Date;
 @Component
 public class JwtUtil {
 
-    //"chave-super-secreta-para-assinar-o-jwt-mude-isso-por-env"
-    private final String secret = "M2rbR0mfHbS3XlTGq0TgVQ7B5nUR2+Q9xq1lzYIk2S0=";
+
+    private final String secret = EnvConfig.get("JWT_SECRET");
     private final long expirationMs = 86400000; // 1 dia
 
     private Key getKey() {
